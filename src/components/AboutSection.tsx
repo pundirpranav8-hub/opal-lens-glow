@@ -12,22 +12,22 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            style={{ boxShadow: "var(--shadow-card)" }}
-          >
+            style={{ boxShadow: "var(--shadow-card)" }}>
+            
             <img
-              src={aboutImg}
+
               alt="Pranav Pundir - Founder of OPAL Media"
               className="w-full h-full object-cover"
-              loading="lazy"
-            />
+              loading="lazy" src="/lovable-uploads/462aa924-b2d3-400d-a016-c5184f031da3.jpg" />
+            
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: 0.15 }}
-          >
+            transition={{ duration: 0.6, delay: 0.15 }}>
+            
             <p className="text-ui text-primary mb-3">About</p>
             <h2 className="text-3xl sm:text-4xl font-bold text-foreground mb-6">
               The Eye Behind <span className="text-primary">OPAL</span>
@@ -50,8 +50,8 @@ const AboutSection = () => {
           </motion.div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default AboutSection;
