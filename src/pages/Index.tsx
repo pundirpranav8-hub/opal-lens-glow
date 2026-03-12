@@ -8,10 +8,12 @@ import ProjectsSection from "@/components/ProjectsSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import SparkleTrail from "@/components/SparkleTrail";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SparkleTrail />
       <Navbar />
       <ThemeToggle />
       <HeroSection />
