@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import ThemeToggle from "@/components/ThemeToggle";
 import HeroSection from "@/components/HeroSection";
+import LiquidGlass from "@/components/LiquidGlass";
 import PortfolioCards from "@/components/PortfolioCards";
 import PhotographySection from "@/components/PhotographySection";
 import VideographySection from "@/components/VideographySection";
@@ -17,6 +18,7 @@ const Index = () => {
       <Navbar />
       <ThemeToggle />
       <HeroSection />
+      <LiquidGlass />
 
       {/* Interactive Cards Section */}
       <section className="section-padding -mt-12">
