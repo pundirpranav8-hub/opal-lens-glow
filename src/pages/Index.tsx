@@ -17,6 +17,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <SparkleTrail />
+      <WizardBroom />
       <Navbar />
       <ThemeToggle />
       <HeroSection />
