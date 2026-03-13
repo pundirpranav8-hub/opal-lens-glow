@@ -11,6 +11,8 @@ import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 import SparkleTrail from "@/components/SparkleTrail";
 
+import WizardBroom from "@/components/WizardBroom";
+
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { motion, useAnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const WizardBroom = () => {
   const [pos, setPos] = useState({ x: 120, y: 100 });
