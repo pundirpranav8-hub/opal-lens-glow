@@ -195,6 +195,16 @@
   }
 }
 
+/* Marquee scroll animation */
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-strip {
+  animation: marquee-scroll 20s linear infinite;
+}
+
 /* Ripple animation */
 @keyframes ripple-wave {
   0% {

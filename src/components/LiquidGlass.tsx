@@ -66,139 +66,53 @@ const LiquidGlass = () => {
 
   return (
     <div className="relative w-full overflow-hidden" style={{ height: "120px" }}>
-      {/* Opal shimmer canvas */}
       <canvas
         ref={canvasRef}
         className="absolute inset-0 w-full h-full"
         style={{ opacity: 0.7 }}
       />
 
-      {/* Hourglass frosted glass shape */}
-      <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+      {/* Scrolling marquee text */}
+      <div className="absolute inset-0 flex items-center overflow-hidden pointer-events-none z-10">
+        <div className="marquee-strip flex whitespace-nowrap">
+          {Array.from({ length: 8 }).map((_, i) => (
+            <span
+              key={i}
+              className="mx-8 font-heading text-lg md:text-xl tracking-widest uppercase"
+              style={{
+                color: "hsl(var(--foreground) / 0.15)",
+                textShadow: "0 0 20px hsl(var(--primary) / 0.2)",
+              }}
+            >
+              OPAL Media &nbsp;·&nbsp; By Pranav Pundir &nbsp;&nbsp;✦&nbsp;&nbsp;
+            </span>
+          ))}
+        </div>
+      </div>
+
+      {/* Frosted glass overlay */}
+      <div className="absolute inset-0 pointer-events-none">
         <motion.div
           className="relative w-full h-full"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
         >
-          {/* Left glass taper */}
-          <div
-            className="absolute inset-0"
-            style={{
-              background: `linear-gradient(90deg, 
-                hsl(var(--background)) 0%, 
-                transparent 15%, 
-                transparent 85%, 
-                hsl(var(--background)) 100%
-              )`,
-            }}
-          />
-
-          {/* Top frosted edge */}
-          <div
-            className="absolute top-0 left-0 right-0"
-            style={{
-              height: "40%",
-              background: `linear-gradient(180deg, 
-                hsl(var(--background) / 0.8) 0%, 
-                transparent 100%
-              )`,
-              backdropFilter: "blur(4px)",
-              WebkitBackdropFilter: "blur(4px)",
-              maskImage: "linear-gradient(180deg, black 0%, transparent 100%)",
-              WebkitMaskImage: "linear-gradient(180deg, black 0%, transparent 100%)",
-            }}
-          />
-
-          {/* Bottom frosted edge */}
-          <div
-            className="absolute bottom-0 left-0 right-0"
-            style={{
-              height: "40%",
-              background: `linear-gradient(0deg, 
-                hsl(var(--background) / 0.8) 0%, 
-                transparent 100%
-              )`,
-              backdropFilter: "blur(4px)",
-              WebkitBackdropFilter: "blur(4px)",
-              maskImage: "linear-gradient(0deg, black 0%, transparent 100%)",
-              WebkitMaskImage: "linear-gradient(0deg, black 0%, transparent 100%)",
-            }}
-          />
-
-          {/* Central hourglass pinch — frosted glass */}
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div
-              style={{
-                width: "100%",
-                height: "100%",
-                background: `radial-gradient(ellipse 50% 100% at 50% 50%, 
-                  hsl(var(--primary) / 0.06) 0%, 
-                  hsl(var(--primary) / 0.02) 40%,
-                  transparent 70%
-                )`,
-                backdropFilter: "blur(12px) saturate(1.4)",
-                WebkitBackdropFilter: "blur(12px) saturate(1.4)",
-                maskImage: `radial-gradient(ellipse 80% 100% at 50% 50%, 
-                  black 0%, 
-                  black 20%, 
-                  transparent 70%
-                )`,
-                WebkitMaskImage: `radial-gradient(ellipse 80% 100% at 50% 50%, 
-                  black 0%, 
-                  black 20%, 
-                  transparent 70%
-                )`,
-              }}
-            />
-          </div>
-
-          {/* Iridescent highlight line */}
-          <div
-            className="absolute top-1/2 left-0 right-0 -translate-y-1/2"
-            style={{
-              height: "1px",
-              background: `linear-gradient(90deg, 
-                transparent 5%,
-                hsl(45 100% 70% / 0.3) 20%,
-                hsl(200 80% 70% / 0.4) 35%,
-                hsl(320 70% 70% / 0.3) 50%,
-                hsl(45 100% 70% / 0.4) 65%,
-                hsl(170 80% 70% / 0.3) 80%,
-                transparent 95%
-              )`,
-            }}
-          />
-
-          {/* Secondary highlight */}
-          <div
-            className="absolute left-0 right-0"
-            style={{
-              top: "30%",
-              height: "1px",
-              opacity: 0.4,
-              background: `linear-gradient(90deg, 
-                transparent 10%,
-                hsl(var(--primary) / 0.2) 30%,
-                hsl(var(--primary) / 0.1) 70%,
-                transparent 90%
-              )`,
-            }}
-          />
-          <div
-            className="absolute left-0 right-0"
-            style={{
-              top: "70%",
-              height: "1px",
-              opacity: 0.4,
-              background: `linear-gradient(90deg, 
-                transparent 10%,
-                hsl(var(--primary) / 0.2) 30%,
-                hsl(var(--primary) / 0.1) 70%,
-                transparent 90%
-              )`,
-            }}
-          />
+          <div className="absolute inset-0" style={{
+            background: `linear-gradient(90deg, hsl(var(--background)) 0%, transparent 15%, transparent 85%, hsl(var(--background)) 100%)`,
+          }} />
+          <div className="absolute top-0 left-0 right-0" style={{
+            height: "40%",
+            background: `linear-gradient(180deg, hsl(var(--background) / 0.8) 0%, transparent 100%)`,
+          }} />
+          <div className="absolute bottom-0 left-0 right-0" style={{
+            height: "40%",
+            background: `linear-gradient(0deg, hsl(var(--background) / 0.8) 0%, transparent 100%)`,
+          }} />
+          <div className="absolute top-1/2 left-0 right-0 -translate-y-1/2" style={{
+            height: "1px",
+            background: `linear-gradient(90deg, transparent 5%, hsl(45 100% 70% / 0.3) 20%, hsl(200 80% 70% / 0.4) 35%, hsl(320 70% 70% / 0.3) 50%, hsl(45 100% 70% / 0.4) 65%, hsl(170 80% 70% / 0.3) 80%, transparent 95%)`,
+          }} />
         </motion.div>
       </div>
     </div>
