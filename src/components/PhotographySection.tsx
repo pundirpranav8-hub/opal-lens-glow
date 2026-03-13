@@ -15,7 +15,7 @@ const photos = [
 { src: realPhoto3, alt: "Nature macro photography", title: "Bougainvillea Bloom" },
 { src: realPhoto4, alt: "Product photography", title: "Golden Spirit" },
 { src: realPhoto5, alt: "Neon signage photography", title: "Neon Nights" },
-{ src: realPhoto6, alt: "Event portrait photography", title: "Raw Moments" }];
+{ src: realPhoto6, alt: "Mountain biking adventure photography", title: "Trail Brotherhood" }];
 
 
 const PhotographySection = () => {
