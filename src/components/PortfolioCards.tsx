@@ -1,4 +1,4 @@
-import { Camera, Film, Palette } from "lucide-react";
+import { Camera, Palette } from "lucide-react";
 import RippleCard from "./RippleCard";
 
 const cardData = [
