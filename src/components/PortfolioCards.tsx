@@ -1,4 +1,4 @@
-import { Camera, Film, Palette } from "lucide-react";
+import { Camera, Palette } from "lucide-react";
 import RippleCard from "./RippleCard";
 
 const cardData = [
@@ -7,12 +7,6 @@ const cardData = [
     title: "Photography",
     description: "Portraits, landscapes, events — stories captured in a single frame.",
     href: "#photography",
-  },
-  {
-    icon: Film,
-    title: "Videography",
-    description: "Cinematic productions that move audiences and brands forward.",
-    href: "#videography",
   },
   {
     icon: Palette,
@@ -28,7 +22,7 @@ const PortfolioCards = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-3xl mx-auto">
       {cardData.map((card, i) => (
         <div
           key={card.title}

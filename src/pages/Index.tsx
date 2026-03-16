@@ -4,7 +4,7 @@ import HeroSection from "@/components/HeroSection";
 import LiquidGlass from "@/components/LiquidGlass";
 import PortfolioCards from "@/components/PortfolioCards";
 import PhotographySection from "@/components/PhotographySection";
-import VideographySection from "@/components/VideographySection";
+
 import ProjectsSection from "@/components/ProjectsSection";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
@@ -31,7 +31,7 @@ const Index = () => {
       </section>
 
       <PhotographySection />
-      <VideographySection />
+      
       <ProjectsSection />
       <AboutSection />
       <ContactSection />
