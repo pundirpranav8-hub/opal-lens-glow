@@ -31,7 +31,7 @@ const Index = () => {
       </section>
 
       <PhotographySection />
-      <VideographySection />
+      
       <ProjectsSection />
       <AboutSection />
       <ContactSection />

@@ -9,12 +9,6 @@ const cardData = [
     href: "#photography",
   },
   {
-    icon: Film,
-    title: "Videography",
-    description: "Cinematic productions that move audiences and brands forward.",
-    href: "#videography",
-  },
-  {
     icon: Palette,
     title: "Projects",
     description: "Editing, color grading, and brand visuals that define identity.",

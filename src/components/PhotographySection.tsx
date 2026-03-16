@@ -8,6 +8,8 @@ import realPhoto3 from "@/assets/real-photo-3.jpg";
 import realPhoto4 from "@/assets/real-photo-4.jpg";
 import realPhoto5 from "@/assets/real-photo-5.jpg";
 import realPhoto6 from "@/assets/real-photo-6.jpg";
+import realPhoto7 from "@/assets/real-photo-7.jpg";
+import realPhoto8 from "@/assets/real-photo-8.jpg";
 
 const photos = [
 { src: realPhoto1, alt: "Food & lifestyle photography", title: "Culinary Vibes" },
@@ -15,7 +17,9 @@ const photos = [
 { src: realPhoto3, alt: "Nature macro photography", title: "Bougainvillea Bloom" },
 { src: realPhoto4, alt: "Product photography", title: "Golden Spirit" },
 { src: realPhoto5, alt: "Neon signage photography", title: "Neon Nights" },
-{ src: realPhoto6, alt: "Mountain biking adventure photography", title: "Trail Brotherhood" }];
+{ src: realPhoto6, alt: "Mountain biking adventure photography", title: "Trail Brotherhood" },
+{ src: realPhoto7, alt: "DJ nightlife event photography", title: "Romeo Lane Nights" },
+{ src: realPhoto8, alt: "Party portrait photography", title: "Dance & Lights" }];
 
 
 const PhotographySection = () => {

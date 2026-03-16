@@ -98,7 +98,7 @@ const ProjectsSection = () => {
     <section id="projects" className="section-padding">
       <div className="container-max">
         <div className="mb-16">
-          <p className="text-ui text-primary mb-3">03</p>
+          <p className="text-ui text-primary mb-3">02</p>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
             Projects
           </h2>
