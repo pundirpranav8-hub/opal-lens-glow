@@ -168,7 +168,7 @@ const ProjectsSection = () => {
                   </div>
                   {project.gallery && (
                     <motion.div
-                      animate={{ rotate: expandedProject === project.title ? 180 : 0 }}
+                      animate={{ rotate: expandedProject === i ? 180 : 0 }}
                       transition={{ duration: 0.3 }}
                     >
                       <ChevronDown className="w-5 h-5 text-muted-foreground" />
@@ -179,7 +179,7 @@ const ProjectsSection = () => {
 
               {/* Expandable gallery */}
               <AnimatePresence>
-                {project.gallery && expandedProject === project.title && (
+                {project.gallery && expandedProject === i && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
