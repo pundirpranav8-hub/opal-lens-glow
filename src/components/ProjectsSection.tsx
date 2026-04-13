@@ -2,10 +2,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import { Play, Pause, Volume2, VolumeX, ChevronDown } from "lucide-react";
 import project1 from "@/assets/project-1-new.png";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.avif";
 import project5 from "@/assets/project-5.jpg";
+import project6 from "@/assets/project-6.avif";
+import project7 from "@/assets/project-7.jpg";
+import project8 from "@/assets/project-8.avif";
+import project9 from "@/assets/project-9.avif";
 
 interface Project {
   src: string;
@@ -26,8 +28,17 @@ const projects: Project[] = [
       { src: project5, alt: "Brand identity venue photography" },
     ],
   },
-  { src: project2, alt: "Social media content", title: "Digital Campaign", desc: "Social media content strategy & design" },
-  { src: project3, alt: "Video editing suite", title: "Post-Production", desc: "Color grading & editorial for feature film" },
+  {
+    src: project7,
+    alt: "Romeo Lane event photography",
+    title: "Brand Identity",
+    desc: "Event & venue branding for premium experiences",
+    gallery: [
+      { src: project6, alt: "Venue branding" },
+      { src: project8, alt: "Brand visual identity" },
+      { src: project9, alt: "Featured brand work" },
+    ],
+  },
 ];
 
 const reels = [
@@ -113,7 +124,7 @@ const ReelCard = ({ src, title, index }: { src: string; title: string; index: nu
 };
 
 const ProjectsSection = () => {
-  const [expandedProject, setExpandedProject] = useState<string | null>(null);
+  const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
   return (
     <section id="projects" className="section-padding">
@@ -127,10 +138,10 @@ const ProjectsSection = () => {
         </div>
 
         {/* Project cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {projects.map((project, i) => (
             <motion.div
-              key={project.title}
+              key={i}
               className="rounded-xl overflow-hidden bg-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -140,7 +151,7 @@ const ProjectsSection = () => {
             >
               <div
                 className={`group ${project.gallery ? "cursor-pointer" : ""}`}
-                onClick={() => project.gallery && setExpandedProject(expandedProject === project.title ? null : project.title)}
+                onClick={() => project.gallery && setExpandedProject(expandedProject === i ? null : i)}
               >
                 <div className="aspect-video overflow-hidden">
                   <img
@@ -157,7 +168,7 @@ const ProjectsSection = () => {
                   </div>
                   {project.gallery && (
                     <motion.div
-                      animate={{ rotate: expandedProject === project.title ? 180 : 0 }}
+                      animate={{ rotate: expandedProject === i ? 180 : 0 }}
                       transition={{ duration: 0.3 }}
                     >
                       <ChevronDown className="w-5 h-5 text-muted-foreground" />
@@ -168,7 +179,7 @@ const ProjectsSection = () => {
 
               {/* Expandable gallery */}
               <AnimatePresence>
-                {project.gallery && expandedProject === project.title && (
+                {project.gallery && expandedProject === i && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
