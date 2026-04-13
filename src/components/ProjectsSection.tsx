@@ -26,14 +26,7 @@ const projects: Project[] = [
     gallery: [
       { src: project4, alt: "Brand identity creative direction" },
       { src: project5, alt: "Brand identity venue photography" },
-    ],
-  },
-  {
-    src: project7,
-    alt: "Romeo Lane event photography",
-    title: "Brand Identity",
-    desc: "Event & venue branding for premium experiences",
-    gallery: [
+      { src: project7, alt: "Romeo Lane event photography" },
       { src: project6, alt: "Venue branding" },
       { src: project8, alt: "Brand visual identity" },
       { src: project9, alt: "Featured brand work" },
