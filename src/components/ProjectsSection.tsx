@@ -2,10 +2,12 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
 import { Play, Pause, Volume2, VolumeX, ChevronDown } from "lucide-react";
 import project1 from "@/assets/project-1-new.png";
-import project2 from "@/assets/project-2.jpg";
-import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.avif";
 import project5 from "@/assets/project-5.jpg";
+import project6 from "@/assets/project-6.avif";
+import project7 from "@/assets/project-7.jpg";
+import project8 from "@/assets/project-8.avif";
+import project9 from "@/assets/project-9.avif";
 
 interface Project {
   src: string;
@@ -26,8 +28,17 @@ const projects: Project[] = [
       { src: project5, alt: "Brand identity venue photography" },
     ],
   },
-  { src: project2, alt: "Social media content", title: "Digital Campaign", desc: "Social media content strategy & design" },
-  { src: project3, alt: "Video editing suite", title: "Post-Production", desc: "Color grading & editorial for feature film" },
+  {
+    src: project7,
+    alt: "Romeo Lane event photography",
+    title: "Brand Identity",
+    desc: "Event & venue branding for premium experiences",
+    gallery: [
+      { src: project6, alt: "Venue branding" },
+      { src: project8, alt: "Brand visual identity" },
+      { src: project9, alt: "Featured brand work" },
+    ],
+  },
 ];
 
 const reels = [
