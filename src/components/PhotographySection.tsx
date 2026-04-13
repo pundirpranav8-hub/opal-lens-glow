@@ -10,6 +10,7 @@ import realPhoto5 from "@/assets/real-photo-5.jpg";
 import realPhoto6 from "@/assets/real-photo-6.jpg";
 import realPhoto7 from "@/assets/real-photo-7.jpg";
 import realPhoto8 from "@/assets/real-photo-8.jpg";
+import realPhoto9 from "@/assets/real-photo-9.jpg";
 
 const photos = [
 { src: realPhoto1, alt: "Food & lifestyle photography", title: "Culinary Vibes" },
@@ -19,7 +20,8 @@ const photos = [
 { src: realPhoto5, alt: "Neon signage photography", title: "Neon Nights" },
 { src: realPhoto6, alt: "Mountain biking adventure photography", title: "Trail Brotherhood" },
 { src: realPhoto7, alt: "DJ nightlife event photography", title: "Romeo Lane Nights" },
-{ src: realPhoto8, alt: "Party portrait photography", title: "Dance & Lights" }];
+{ src: realPhoto8, alt: "Party portrait photography", title: "Dance & Lights" },
+{ src: realPhoto9, alt: "Product photography - Jägermeister bottle", title: "Golden Spirit" }];
 
 
 const PhotographySection = () => {
