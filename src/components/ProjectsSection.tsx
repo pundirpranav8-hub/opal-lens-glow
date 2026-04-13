@@ -124,7 +124,7 @@ const ReelCard = ({ src, title, index }: { src: string; title: string; index: nu
 };
 
 const ProjectsSection = () => {
-  const [expandedProject, setExpandedProject] = useState<string | null>(null);
+  const [expandedProject, setExpandedProject] = useState<number | null>(null);
 
   return (
     <section id="projects" className="section-padding">
@@ -138,10 +138,10 @@ const ProjectsSection = () => {
         </div>
 
         {/* Project cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
           {projects.map((project, i) => (
             <motion.div
-              key={project.title}
+              key={i}
               className="rounded-xl overflow-hidden bg-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -151,7 +151,7 @@ const ProjectsSection = () => {
             >
               <div
                 className={`group ${project.gallery ? "cursor-pointer" : ""}`}
-                onClick={() => project.gallery && setExpandedProject(expandedProject === project.title ? null : project.title)}
+                onClick={() => project.gallery && setExpandedProject(expandedProject === i ? null : i)}
               >
                 <div className="aspect-video overflow-hidden">
                   <img
