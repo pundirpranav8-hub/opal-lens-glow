@@ -1,18 +1,33 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
-import { Play, Pause, Volume2, VolumeX } from "lucide-react";
+import { Play, Pause, Volume2, VolumeX, ChevronDown } from "lucide-react";
 import project1 from "@/assets/project-1-new.png";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.avif";
 import project5 from "@/assets/project-5.jpg";
 
-const projects = [
-  { src: project1, alt: "Brand identity design", title: "Brand Identity", desc: "Complete visual identity for a luxury brand" },
+interface Project {
+  src: string;
+  alt: string;
+  title: string;
+  desc: string;
+  gallery?: { src: string; alt: string }[];
+}
+
+const projects: Project[] = [
+  {
+    src: project1,
+    alt: "Brand identity design",
+    title: "Brand Identity",
+    desc: "Complete visual identity for a luxury brand",
+    gallery: [
+      { src: project4, alt: "Brand identity creative direction" },
+      { src: project5, alt: "Brand identity venue photography" },
+    ],
+  },
   { src: project2, alt: "Social media content", title: "Digital Campaign", desc: "Social media content strategy & design" },
   { src: project3, alt: "Video editing suite", title: "Post-Production", desc: "Color grading & editorial for feature film" },
-  { src: project4, alt: "Creative project", title: "Creative Vision", desc: "Artistic direction & visual storytelling" },
-  { src: project5, alt: "Bar & lounge photography", title: "Underdoggs Lounge", desc: "Interior & ambiance photography for premium venues" },
 ];
 
 const reels = [
@@ -98,6 +113,8 @@ const ReelCard = ({ src, title, index }: { src: string; title: string; index: nu
 };
 
 const ProjectsSection = () => {
+  const [expandedProject, setExpandedProject] = useState<string | null>(null);
+
   return (
     <section id="projects" className="section-padding">
       <div className="container-max">
@@ -109,30 +126,77 @@ const ProjectsSection = () => {
           <div className="accent-line mt-6 max-w-xs" />
         </div>
 
-        {/* Static project cards */}
+        {/* Project cards */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
           {projects.map((project, i) => (
             <motion.div
               key={project.title}
-              className="group rounded-xl overflow-hidden bg-card"
+              className="rounded-xl overflow-hidden bg-card"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
               style={{ boxShadow: "var(--shadow-card)" }}
             >
-              <div className="aspect-video overflow-hidden">
-                <img
-                  src={project.src}
-                  alt={project.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
-                />
+              <div
+                className={`group ${project.gallery ? "cursor-pointer" : ""}`}
+                onClick={() => project.gallery && setExpandedProject(expandedProject === project.title ? null : project.title)}
+              >
+                <div className="aspect-video overflow-hidden">
+                  <img
+                    src={project.src}
+                    alt={project.alt}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="p-6 flex items-center justify-between">
+                  <div>
+                    <h3 className="text-foreground font-heading font-bold text-lg mb-2">{project.title}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed">{project.desc}</p>
+                  </div>
+                  {project.gallery && (
+                    <motion.div
+                      animate={{ rotate: expandedProject === project.title ? 180 : 0 }}
+                      transition={{ duration: 0.3 }}
+                    >
+                      <ChevronDown className="w-5 h-5 text-muted-foreground" />
+                    </motion.div>
+                  )}
+                </div>
               </div>
-              <div className="p-6">
-                <h3 className="text-foreground font-heading font-bold text-lg mb-2">{project.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{project.desc}</p>
-              </div>
+
+              {/* Expandable gallery */}
+              <AnimatePresence>
+                {project.gallery && expandedProject === project.title && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.4, ease: "easeInOut" }}
+                    className="overflow-hidden"
+                  >
+                    <div className="px-4 pb-4 grid grid-cols-2 gap-3">
+                      {project.gallery.map((img, j) => (
+                        <motion.div
+                          key={j}
+                          className="rounded-lg overflow-hidden"
+                          initial={{ opacity: 0, scale: 0.9 }}
+                          animate={{ opacity: 1, scale: 1 }}
+                          transition={{ delay: j * 0.1, duration: 0.3 }}
+                        >
+                          <img
+                            src={img.src}
+                            alt={img.alt}
+                            className="w-full h-full object-cover aspect-square rounded-lg hover:scale-105 transition-transform duration-500"
+                            loading="lazy"
+                          />
+                        </motion.div>
+                      ))}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
             </motion.div>
           ))}
         </div>
