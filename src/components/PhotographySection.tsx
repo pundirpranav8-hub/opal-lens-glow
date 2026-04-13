@@ -10,6 +10,7 @@ import realPhoto5 from "@/assets/real-photo-5.jpg";
 import realPhoto6 from "@/assets/real-photo-6.jpg";
 import realPhoto7 from "@/assets/real-photo-7.jpg";
 import realPhoto8 from "@/assets/real-photo-8.jpg";
+import realPhoto9 from "@/assets/real-photo-9.jpg";
 
 const photos = [
 { src: realPhoto1, alt: "Food & lifestyle photography", title: "Culinary Vibes" },
