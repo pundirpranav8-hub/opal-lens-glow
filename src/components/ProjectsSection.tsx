@@ -1,18 +1,33 @@
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { useRef, useState } from "react";
-import { Play, Pause, Volume2, VolumeX } from "lucide-react";
+import { Play, Pause, Volume2, VolumeX, ChevronDown } from "lucide-react";
 import project1 from "@/assets/project-1-new.png";
 import project2 from "@/assets/project-2.jpg";
 import project3 from "@/assets/project-3.jpg";
 import project4 from "@/assets/project-4.avif";
 import project5 from "@/assets/project-5.jpg";
 
-const projects = [
-  { src: project1, alt: "Brand identity design", title: "Brand Identity", desc: "Complete visual identity for a luxury brand" },
+interface Project {
+  src: string;
+  alt: string;
+  title: string;
+  desc: string;
+  gallery?: { src: string; alt: string }[];
+}
+
+const projects: Project[] = [
+  {
+    src: project1,
+    alt: "Brand identity design",
+    title: "Brand Identity",
+    desc: "Complete visual identity for a luxury brand",
+    gallery: [
+      { src: project4, alt: "Brand identity creative direction" },
+      { src: project5, alt: "Brand identity venue photography" },
+    ],
+  },
   { src: project2, alt: "Social media content", title: "Digital Campaign", desc: "Social media content strategy & design" },
   { src: project3, alt: "Video editing suite", title: "Post-Production", desc: "Color grading & editorial for feature film" },
-  { src: project4, alt: "Creative project", title: "Creative Vision", desc: "Artistic direction & visual storytelling" },
-  { src: project5, alt: "Bar & lounge photography", title: "Underdoggs Lounge", desc: "Interior & ambiance photography for premium venues" },
 ];
 
 const reels = [
