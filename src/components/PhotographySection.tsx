@@ -11,8 +11,12 @@ import realPhoto6 from "@/assets/real-photo-6.jpg";
 import realPhoto7 from "@/assets/real-photo-7.jpg";
 import realPhoto8 from "@/assets/real-photo-8.jpg";
 import realPhoto9 from "@/assets/real-photo-9.jpg";
+import photographyTop1 from "@/assets/photography-top-1.png";
+import photographyTop2 from "@/assets/photography-top-2.png";
 
 const photos = [
+{ src: photographyTop1, alt: "Live concert photography with pyrotechnics", title: "Stage Fire" },
+{ src: photographyTop2, alt: "Concert performer photography with smoke and flames", title: "Live Heat" },
 { src: realPhoto1, alt: "Food & lifestyle photography", title: "Culinary Vibes" },
 { src: realPhoto2, alt: "Event photography", title: "Night Energy" },
 { src: realPhoto3, alt: "Nature macro photography", title: "Bougainvillea Bloom" },
