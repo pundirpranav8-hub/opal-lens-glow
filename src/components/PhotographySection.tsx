@@ -13,10 +13,18 @@ import realPhoto8 from "@/assets/real-photo-8.jpg";
 import realPhoto9 from "@/assets/real-photo-9.jpg";
 import photographyTop1 from "@/assets/photography-top-1.png";
 import photographyTop2 from "@/assets/photography-top-2.png";
+import photographyNew1 from "@/assets/photography-new-1.jpg";
+import photographyNew2 from "@/assets/photography-new-2.jpg";
+import photographyNew3 from "@/assets/photography-new-3.jpeg";
+import photographyNew4 from "@/assets/photography-new-4.jpg";
 
 const photos = [
 { src: photographyTop1, alt: "Live concert photography with pyrotechnics", title: "Stage Fire" },
 { src: photographyTop2, alt: "Concert performer photography with smoke and flames", title: "Live Heat" },
+{ src: photographyNew1, alt: "Live concert performer on stage with dramatic lighting", title: "Spotlight Diva" },
+{ src: photographyNew2, alt: "Concert vocalist performing with teal smoke", title: "Calm Storm" },
+{ src: photographyNew3, alt: "Artist performing with prismatic light flares", title: "Prism Beats" },
+{ src: photographyNew4, alt: "Vocalist in studded leather jacket on stage", title: "Rockstar Energy" },
 { src: realPhoto1, alt: "Food & lifestyle photography", title: "Culinary Vibes" },
 { src: realPhoto2, alt: "Event photography", title: "Night Energy" },
 { src: realPhoto3, alt: "Nature macro photography", title: "Bougainvillea Bloom" },
