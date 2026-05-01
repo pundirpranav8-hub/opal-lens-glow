@@ -13,18 +13,6 @@ import realPhoto8 from "@/assets/real-photo-8.jpg";
 import realPhoto9 from "@/assets/real-photo-9.jpg";
 import photographyTop1 from "@/assets/photography-top-1.png";
 import photographyTop2 from "@/assets/photography-top-2.png";
-import adobeExpress from "@/assets/AdobeExpressPhotos_6c28839f7d714c11b99c70121c615556_CopyEdited.jpg";
-import calm from "@/assets/Calm.jpg";
-import dsc00842 from "@/assets/DSC00842 - Copy.JPG";
-import dsc01891 from "@/assets/DSC01891.JPG";
-import dsc01907 from "@/assets/DSC01907.JPG";
-import dsc01951 from "@/assets/DSC01951.JPG";
-import dsc01957 from "@/assets/DSC01957.JPG";
-import dsc01997 from "@/assets/DSC01997.JPG";
-import dsc02106 from "@/assets/DSC02106.JPG";
-import krishna from "@/assets/krishna.jpeg";
-import vishalMishra from "@/assets/vishal mishra.jpg";
-import priyankaMeher from "@/assets/priyanka meher.jpg";
 
 const photos = [
 { src: photographyTop1, alt: "Live concert photography with pyrotechnics", title: "Stage Fire" },
@@ -37,19 +25,7 @@ const photos = [
 { src: realPhoto6, alt: "Mountain biking adventure photography", title: "Trail Brotherhood" },
 { src: realPhoto7, alt: "DJ nightlife event photography", title: "Romeo Lane Nights" },
 { src: realPhoto8, alt: "Party portrait photography", title: "Dance & Lights" },
-{ src: realPhoto9, alt: "Product photography - Jägermeister bottle", title: "Golden Spirit" },
-{ src: adobeExpress, alt: "Photography edit", title: "Creative Edit" },
-{ src: calm, alt: "Calm portrait", title: "Calm" },
-{ src: dsc00842, alt: "Photography 1", title: "Moment 1" },
-{ src: dsc01891, alt: "Photography 2", title: "Moment 2" },
-{ src: dsc01907, alt: "Photography 3", title: "Moment 3" },
-{ src: dsc01951, alt: "Photography 4", title: "Moment 4" },
-{ src: dsc01957, alt: "Photography 5", title: "Moment 5" },
-{ src: dsc01997, alt: "Photography 6", title: "Moment 6" },
-{ src: dsc02106, alt: "Photography 7", title: "Moment 7" },
-{ src: krishna, alt: "Krishna portrait", title: "Krishna" },
-{ src: vishalMishra, alt: "Vishal Mishra", title: "Vishal Mishra" },
-{ src: priyankaMeher, alt: "Priyanka Meher", title: "Priyanka Meher" }];
+{ src: realPhoto9, alt: "Product photography - Jägermeister bottle", title: "Golden Spirit" }];
 
 
 const PhotographySection = () => {
