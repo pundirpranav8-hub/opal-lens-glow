@@ -10,6 +10,7 @@ import project8 from "@/assets/project-8.avif";
 import project9 from "@/assets/project-9.avif";
 import productKovey from "@/assets/product-kovey-statement.jpg";
 import productKovey2 from "@/assets/product-kovey-statement-2.jpg";
+import productKoveyWildflower from "@/assets/product-kovey-wildflower.jpg";
 
 interface Project {
   src: string;
@@ -39,6 +40,7 @@ const projects: Project[] = [
 const productPhotos = [
   { src: productKovey, alt: "Kovey Statement parfum bottle held in hands", title: "Kovey · Statement" },
   { src: productKovey2, alt: "Kovey Statement parfum bottle warm cinematic light", title: "Kovey · Statement II" },
+  { src: productKoveyWildflower, alt: "Woman holding Kovey Wildflower parfum bottle outdoors", title: "Kovey · Wildflower" },
 ];
 
 const reels = [
