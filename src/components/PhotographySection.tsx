@@ -17,6 +17,7 @@ import photographyNew1 from "@/assets/photography-new-1.jpg";
 import photographyNew2 from "@/assets/photography-new-2.jpg";
 import photographyNew3 from "@/assets/photography-new-3.jpeg";
 import photographyNew4 from "@/assets/photography-new-4.jpg";
+import photographyNew5 from "@/assets/photography-new-5.jpg";
 
 const photos = [
 { src: photographyTop1, alt: "Live concert photography with pyrotechnics", title: "Stage Fire" },
@@ -25,6 +26,7 @@ const photos = [
 { src: photographyNew2, alt: "Concert vocalist performing with teal smoke", title: "Calm Storm" },
 { src: photographyNew3, alt: "Artist performing with prismatic light flares", title: "Prism Beats" },
 { src: photographyNew4, alt: "Vocalist in studded leather jacket on stage", title: "Rockstar Energy" },
+{ src: photographyNew5, alt: "Priyanka live concert performance with smoke and stage lights", title: "Priyanka Live" },
 { src: realPhoto1, alt: "Food & lifestyle photography", title: "Culinary Vibes" },
 { src: realPhoto2, alt: "Event photography", title: "Night Energy" },
 { src: realPhoto3, alt: "Nature macro photography", title: "Bougainvillea Bloom" },
