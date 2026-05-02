@@ -12,6 +12,7 @@ import productKovey from "@/assets/product-kovey-statement.jpg";
 import productKovey2 from "@/assets/product-kovey-statement-2.jpg";
 import productKoveyWildflower from "@/assets/product-kovey-wildflower.jpg";
 import productKoveyLineup from "@/assets/product-kovey-lineup.jpg";
+import productUnderdoggsCocktail from "@/assets/product-underdoggs-cocktail.jpg";
 
 interface Project {
   src: string;
@@ -43,6 +44,7 @@ const productPhotos = [
   { src: productKovey2, alt: "Kovey Statement parfum bottle warm cinematic light", title: "Kovey · Statement II" },
   { src: productKoveyWildflower, alt: "Woman holding Kovey Wildflower parfum bottle outdoors", title: "Kovey · Wildflower" },
   { src: productKoveyLineup, alt: "Kovey parfum lineup: Afterglow, Wildflower, Temptation, Statement on wood", title: "Kovey · The Lineup" },
+  { src: productUnderdoggsCocktail, alt: "Underdoggs branded glass with blue cocktail being stirred at the bar", title: "Underdoggs · Blue Pour" },
 ];
 
 const reels = [
