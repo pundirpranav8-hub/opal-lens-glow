@@ -33,7 +33,7 @@ const photos = [
 { src: realPhoto4, alt: "Product photography", title: "Golden Spirit" },
 { src: realPhoto5, alt: "Neon signage photography", title: "Neon Nights" },
 { src: realPhoto6, alt: "Mountain biking adventure photography", title: "Trail Brotherhood" },
-{ src: realPhoto7, alt: "DJ nightlife event photography", title: "Romeo Lane Nights" },
+
 { src: realPhoto8, alt: "Party portrait photography", title: "Dance & Lights" },
 { src: realPhoto9, alt: "Product photography - Jägermeister bottle", title: "Golden Spirit" }];
 
