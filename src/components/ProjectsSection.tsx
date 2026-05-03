@@ -15,6 +15,7 @@ import productKoveyLineup from "@/assets/product-kovey-lineup.jpg";
 import productUnderdoggsCocktail from "@/assets/product-underdoggs-cocktail.jpg";
 import productUnderdoggsSunset from "@/assets/product-underdoggs-sunset.jpg";
 import productUnderdoggsNeon from "@/assets/product-underdoggs-neon.jpg";
+import productBcsCage from "@/assets/product-bcs-cage.jpg";
 
 interface Project {
   src: string;
@@ -49,6 +50,7 @@ const productPhotos = [
   { src: productUnderdoggsCocktail, alt: "Underdoggs branded glass with blue cocktail being stirred at the bar", title: "Underdoggs · Blue Pour" },
   { src: productUnderdoggsSunset, alt: "Layered red and orange sunset cocktail with mint garnish at Underdoggs bar", title: "Underdoggs · Sunset Layers" },
   { src: productUnderdoggsNeon, alt: "Underdoggs neon UD logo signage glowing inside the bar", title: "Underdoggs · Neon Signage" },
+  { src: productBcsCage, alt: "BCS MMA cage lit by spotlights with crowd silhouettes", title: "BCS · Cage Lights" },
 ];
 
 const reels = [
