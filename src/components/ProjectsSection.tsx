@@ -17,6 +17,7 @@ import productUnderdoggsSunset from "@/assets/product-underdoggs-sunset.jpg";
 import productUnderdoggsNeon from "@/assets/product-underdoggs-neon.jpg";
 import productBcsCage from "@/assets/product-bcs-cage.jpg";
 import productKoveyBandana from "@/assets/product-kovey-bandana.jpg";
+import productKoveySpray from "@/assets/product-kovey-spray.jpg";
 
 interface Project {
   src: string;
@@ -53,6 +54,7 @@ const productPhotos = [
   { src: productUnderdoggsNeon, alt: "Underdoggs neon UD logo signage glowing inside the bar", title: "Underdoggs · Neon Signage" },
   { src: productBcsCage, alt: "BCS MMA cage lit by spotlights with crowd silhouettes", title: "BCS · Cage Lights" },
   { src: productKoveyBandana, alt: "Man in white bandana and shirt holding green Kovey parfum bottle at night", title: "Kovey · Night Court" },
+  { src: productKoveySpray, alt: "Woman spraying Kovey parfum mist against black backdrop", title: "Kovey · The Mist" },
 ];
 
 const reels = [
