@@ -18,6 +18,7 @@ import productUnderdoggsNeon from "@/assets/product-underdoggs-neon.jpg";
 import productBcsCage from "@/assets/product-bcs-cage.jpg";
 import productKoveyBandana from "@/assets/product-kovey-bandana.jpg";
 import productKoveySpray from "@/assets/product-kovey-spray.jpg";
+import productKoveyAfterglowGrass from "@/assets/product-kovey-afterglow-grass.jpg";
 
 interface Project {
   src: string;
