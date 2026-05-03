@@ -56,6 +56,7 @@ const productPhotos = [
   { src: productBcsCage, alt: "BCS MMA cage lit by spotlights with crowd silhouettes", title: "BCS · Cage Lights" },
   { src: productKoveyBandana, alt: "Man in white bandana and shirt holding green Kovey parfum bottle at night", title: "Kovey · Night Court" },
   { src: productKoveySpray, alt: "Woman spraying Kovey parfum mist against black backdrop", title: "Kovey · The Mist" },
+  { src: productKoveyAfterglowGrass, alt: "Woman in pale yellow gown sitting on grass with Kovey Afterglow parfum at golden hour", title: "Kovey · Afterglow Garden" },
 ];
 
 const reels = [
