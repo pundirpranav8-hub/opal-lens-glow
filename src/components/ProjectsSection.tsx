@@ -16,6 +16,7 @@ import productUnderdoggsCocktail from "@/assets/product-underdoggs-cocktail.jpg"
 import productUnderdoggsSunset from "@/assets/product-underdoggs-sunset.jpg";
 import productUnderdoggsNeon from "@/assets/product-underdoggs-neon.jpg";
 import productBcsCage from "@/assets/product-bcs-cage.jpg";
+import productKoveyBandana from "@/assets/product-kovey-bandana.jpg";
 
 interface Project {
   src: string;
