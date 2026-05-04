@@ -65,6 +65,7 @@ const reels = [
   { src: "/videos/reel_3.mp4", title: "Reel 03" },
   { src: "/videos/reel_4.mp4", title: "Reel 04" },
   { src: "/videos/reel_5.mp4", title: "Reel 05" },
+  { src: "/videos/reel_6.mp4", title: "Reel 06" },
 ];
 
 const ReelCard = ({
