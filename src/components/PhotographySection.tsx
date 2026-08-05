@@ -18,8 +18,14 @@ import photographyNew2 from "@/assets/photography-new-2.jpg";
 import photographyNew3 from "@/assets/photography-new-3.jpeg";
 import photographyNew4 from "@/assets/photography-new-4.jpg";
 import photographyNew5 from "@/assets/photography-new-5.jpg";
+import photographySadhu1 from "@/assets/photography-sadhu-1.png.asset.json";
+import photographyStreetwear1 from "@/assets/photography-streetwear-1.png.asset.json";
+import photographyAghori1 from "@/assets/photography-aghori-1.png.asset.json";
 
 const photos = [
+{ src: photographySadhu1.url, alt: "Portrait of a sadhu with painted face and rudraksha beads", title: "Sacred Ash" },
+{ src: photographyStreetwear1.url, alt: "Streetwear fashion portrait with retro track jacket and spray can", title: "Street Uniform" },
+{ src: photographyAghori1.url, alt: "Aghori performer in a street procession with skull garland", title: "Procession Ritual" },
 { src: photographyTop1, alt: "Live concert photography with pyrotechnics", title: "Stage Fire" },
 { src: photographyTop2, alt: "Concert performer photography with smoke and flames", title: "Live Heat" },
 { src: photographyNew1, alt: "Live concert performer on stage with dramatic lighting", title: "Spotlight Diva" },
