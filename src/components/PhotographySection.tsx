@@ -18,13 +18,7 @@ import photographyNew2 from "@/assets/photography-new-2.jpg";
 import photographyNew3 from "@/assets/photography-new-3.jpeg";
 import photographyNew4 from "@/assets/photography-new-4.jpg";
 import photographyNew5 from "@/assets/photography-new-5.jpg";
-import photographySadhu from "@/assets/photography-sadhu.png.asset.json";
-import photographyStreetwear from "@/assets/photography-streetwear.png.asset.json";
-import photographyAghori from "@/assets/photography-aghori.png.asset.json";
 const photos = [
-  { src: photographySadhu.url, alt: "Portrait of a sadhu with blue face paint and dreadlocks", title: "Eternal Gaze" },
-  { src: photographyStreetwear.url, alt: "Streetwear portrait holding an orange spray can", title: "Urban Pulse" },
-  { src: photographyAghori.url, alt: "Street performer adorned with skulls during a procession", title: "Sacred Skulls" },
   { src: photographyTop1, alt: "Live concert photography with pyrotechnics", title: "Stage Fire" },
   { src: photographyTop2, alt: "Concert performer photography with smoke and flames", title: "Live Heat" },
 { src: photographyNew1, alt: "Live concert performer on stage with dramatic lighting", title: "Spotlight Diva" },
