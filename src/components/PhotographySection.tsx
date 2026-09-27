@@ -18,6 +18,7 @@ import photographyNew2 from "@/assets/photography-new-2.jpg";
 import photographyNew3 from "@/assets/photography-new-3.jpeg";
 import photographyNew4 from "@/assets/photography-new-4.jpg";
 import photographyNew5 from "@/assets/photography-new-5.jpg";
+import photographyPercussion from "@/assets/photography-percussion.jpg";
 const photos = [
   { src: photographyTop1, alt: "Live concert photography with pyrotechnics", title: "Stage Fire" },
   { src: photographyTop2, alt: "Concert performer photography with smoke and flames", title: "Live Heat" },
@@ -34,7 +35,8 @@ const photos = [
 { src: realPhoto6, alt: "Mountain biking adventure photography", title: "Trail Brotherhood" },
 
 { src: realPhoto8, alt: "Party portrait photography", title: "Dance & Lights" },
-{ src: realPhoto9, alt: "Product photography - Jägermeister bottle", title: "Golden Spirit" }];
+{ src: realPhoto9, alt: "Product photography - Jägermeister bottle", title: "Golden Spirit" },
+{ src: photographyPercussion, alt: "Percussionist performing live with tablas and stage lights", title: "Rhythm & Fire" }];
 
 
 const PhotographySection = () => {
